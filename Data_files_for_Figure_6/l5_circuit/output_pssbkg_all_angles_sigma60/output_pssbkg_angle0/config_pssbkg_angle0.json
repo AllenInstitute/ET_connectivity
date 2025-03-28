@@ -1,0 +1,63 @@
+{
+  "run": {
+    "duration": 10000.0,
+    "dt": 0.25,
+    "block_run": false,
+    "block_size": 1000.0
+  },
+  "inputs": {
+    "PSS_spikes": {
+      "input_type": "spikes",
+      "module": "sonata",
+      "input_file": "/allen/programs/mindscope/workgroups/entrainment/naixin.ren/V1_model_build/biorealistic-v1-model/l5_circuit/configs/pssbkg_all_angles_sigma60/../../pss/pss_spikes_1kHz_10s.h5",
+      "node_set": "pss"
+    },
+    "BKG_spikes": {
+      "input_type": "spikes",
+      "module": "sonata",
+      "input_file": "/allen/programs/mindscope/workgroups/entrainment/naixin.ren/V1_model_build/biorealistic-v1-model/l5_circuit/configs/pssbkg_all_angles_sigma60/../../bkg/bkg_spikes_250Hz_10s.h5",
+      "node_set": "bkg"
+    }
+  },
+  "output": {
+    "log_file": "/allen/programs/mindscope/workgroups/entrainment/naixin.ren/V1_model_build/biorealistic-v1-model/l5_circuit/configs/pssbkg_all_angles_sigma60/../../output_pssbkg_all_angles_sigma60/output_pssbkg_angle0/log.txt",
+    "spikes_file": "/allen/programs/mindscope/workgroups/entrainment/naixin.ren/V1_model_build/biorealistic-v1-model/l5_circuit/configs/pssbkg_all_angles_sigma60/../../output_pssbkg_all_angles_sigma60/output_pssbkg_angle0/spikes.h5",
+    "spikes_file_csv": "/allen/programs/mindscope/workgroups/entrainment/naixin.ren/V1_model_build/biorealistic-v1-model/l5_circuit/configs/pssbkg_all_angles_sigma60/../../output_pssbkg_all_angles_sigma60/output_pssbkg_angle0/spikes.csv",
+    "output_dir": "/allen/programs/mindscope/workgroups/entrainment/naixin.ren/V1_model_build/biorealistic-v1-model/l5_circuit/configs/pssbkg_all_angles_sigma60/../../output_pssbkg_all_angles_sigma60/output_pssbkg_angle0",
+    "overwrite_output_dir": true,
+    "quiet_simulator": true
+  },
+  "target_simulator": "NEST",
+  "components": {
+    "point_neuron_models_dir": "/allen/programs/mindscope/workgroups/entrainment/naixin.ren/V1_model_build/biorealistic-v1-model/l5_circuit/configs/pssbkg_all_angles_sigma60/../../components/cell_models",
+    "synaptic_models_dir": "/allen/programs/mindscope/workgroups/entrainment/naixin.ren/V1_model_build/biorealistic-v1-model/l5_circuit/configs/pssbkg_all_angles_sigma60/../../components/synaptic_models"
+  },
+  "networks": {
+    "nodes": [
+      {
+        "nodes_file": "/allen/programs/mindscope/workgroups/entrainment/naixin.ren/V1_model_build/biorealistic-v1-model/l5_circuit/configs/pssbkg_all_angles_sigma60/../../network/v1_nodes.h5",
+        "node_types_file": "/allen/programs/mindscope/workgroups/entrainment/naixin.ren/V1_model_build/biorealistic-v1-model/l5_circuit/configs/pssbkg_all_angles_sigma60/../../network/v1_node_types.csv"
+      },
+      {
+        "nodes_file": "/allen/programs/mindscope/workgroups/entrainment/naixin.ren/V1_model_build/biorealistic-v1-model/l5_circuit/configs/pssbkg_all_angles_sigma60/../../network/bkg_nodes.h5",
+        "node_types_file": "/allen/programs/mindscope/workgroups/entrainment/naixin.ren/V1_model_build/biorealistic-v1-model/l5_circuit/configs/pssbkg_all_angles_sigma60/../../network/bkg_node_types.csv"
+      },
+      {
+        "nodes_file": "/allen/programs/mindscope/workgroups/entrainment/naixin.ren/V1_model_build/biorealistic-v1-model/l5_circuit/configs/pssbkg_all_angles_sigma60/../../network/pss_nodes.h5",
+        "node_types_file": "/allen/programs/mindscope/workgroups/entrainment/naixin.ren/V1_model_build/biorealistic-v1-model/l5_circuit/configs/pssbkg_all_angles_sigma60/../../network/pss_node_types.csv"
+      }
+    ],
+    "edges": [
+      {
+        "edges_file": "/allen/programs/mindscope/workgroups/entrainment/naixin.ren/V1_model_build/biorealistic-v1-model/l5_circuit/configs/pssbkg_all_angles_sigma60/../../network/bkg_v1_edges.h5",
+        "edge_types_file": "/allen/programs/mindscope/workgroups/entrainment/naixin.ren/V1_model_build/biorealistic-v1-model/l5_circuit/configs/pssbkg_all_angles_sigma60/../../network/bkg_v1_edge_types.csv"
+      },
+      {
+        "edges_file": "/allen/programs/mindscope/workgroups/entrainment/naixin.ren/V1_model_build/biorealistic-v1-model/l5_circuit/configs/pssbkg_all_angles_sigma60/../../network/pss_v1_edges_all_angles_sigma60/pss_v1_edges_angle0.h5",
+        "edge_types_file": "/allen/programs/mindscope/workgroups/entrainment/naixin.ren/V1_model_build/biorealistic-v1-model/l5_circuit/configs/pssbkg_all_angles_sigma60/../../network/pss_v1_edge_types.csv"
+      }
+    ]
+  },
+  "config_path": "/allen/programs/mindscope/workgroups/entrainment/naixin.ren/V1_model_build/biorealistic-v1-model/l5_circuit/configs/pssbkg_all_angles_sigma60/config_pssbkg_angle0.json",
+  "config_dir": "/allen/programs/mindscope/workgroups/entrainment/naixin.ren/V1_model_build/biorealistic-v1-model/l5_circuit/configs/pssbkg_all_angles_sigma60"
+}
