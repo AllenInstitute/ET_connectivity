@@ -1,0 +1,101 @@
+{
+  "e5ET-e5ET": {
+    "A_literature": 0.0,
+    "is_pmax": 1.0,
+    "R0": 75.0,
+    "sigma": 127.0,
+    "B_ratio": 0.8,
+    "nsyn_range": [
+      3,
+      8
+    ]
+  },
+  "e5ET-i5Pvalb": {
+    "A_literature": 0.5903092881163264,
+    "is_pmax": 1.0,
+    "R0": 75.0,
+    "sigma": 99.84,
+    "B_ratio": null,
+    "nsyn_range": [
+      3,
+      8
+    ]
+  },
+  "e5ET-i5Sst": {
+    "A_literature": 0.5028599401686157,
+    "is_pmax": 1.0,
+    "R0": 75.0,
+    "sigma": 99.84,
+    "B_ratio": null,
+    "nsyn_range": [
+      3,
+      8
+    ]
+  },
+  "i5Pvalb-e5ET": {
+    "A_literature": 0.43,
+    "is_pmax": 1.0,
+    "R0": 75.0,
+    "sigma": 96.6,
+    "B_ratio": null,
+    "nsyn_range": [
+      3,
+      8
+    ]
+  },
+  "i5Pvalb-i5Pvalb": {
+    "A_literature": 0.5,
+    "is_pmax": 1.0,
+    "R0": 75.0,
+    "sigma": 126.77,
+    "B_ratio": null,
+    "nsyn_range": [
+      3,
+      8
+    ]
+  },
+  "i5Pvalb-i5Sst": {
+    "A_literature": 0.14,
+    "is_pmax": 1.0,
+    "R0": 75.0,
+    "sigma": 126.77,
+    "B_ratio": null,
+    "nsyn_range": [
+      3,
+      8
+    ]
+  },
+  "i5Sst-e5ET": {
+    "A_literature": 0.52,
+    "is_pmax": 1.0,
+    "R0": 75.0,
+    "sigma": 96.6,
+    "B_ratio": null,
+    "nsyn_range": [
+      3,
+      8
+    ]
+  },
+  "i5Sst-i5Pvalb": {
+    "A_literature": 0.29,
+    "is_pmax": 1.0,
+    "R0": 75.0,
+    "sigma": 126.77,
+    "B_ratio": null,
+    "nsyn_range": [
+      3,
+      8
+    ]
+  },
+  "i5Sst-i5Sst": {
+    "A_literature": 0.1,
+    "is_pmax": 1.0,
+    "R0": 75.0,
+    "sigma": 126.77,
+    "B_ratio": null,
+    "nsyn_range": [
+      3,
+      8
+    ]
+  }
+}
